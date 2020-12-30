@@ -1,0 +1,124 @@
+body{
+  padding:0;
+  background: #EE829A;
+}
+
+.coffee-bottom{
+  width: 300px;
+  height: 300px;
+  background: #FFFAF9;
+  margin-left: 20em;
+  margin-top:5em;
+  border-radius: 50%;
+  -webkit-box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+
+}
+
+.coffee-cup{
+
+  width: 170px;
+  height: 170px;
+  position: relative;
+  left: 60px;
+  top: 60px;
+   background: #FFFAF9;
+  border-radius: 50%;
+ -webkit-box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+}
+
+.coffee-cup:before{
+  content:"";
+  width: 25px;
+  height: 35px;
+  position:absolute;
+  background: #FFFAF9;
+  top: 68px;
+  left: -23px;
+  -webkit-box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+box-shadow: -12px 11px 34px -2px rgba(0,0,0,0.75);
+  border-radius: 15px 0 0 15px;
+}
+
+.coffee{
+  position:relative;
+  background: rgb(112,88,64);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  left: 12px;
+  top: 12px;
+  border: 3px solid #3A2316;
+}
+
+.coffee:after{
+  content: "";
+  width: 10px;
+  height: 35px;
+  display: inline-block;
+  background: #F3C482;
+  position: absolute;
+  top: 10px;
+  left: 105px;
+  border-radius: 50%;
+  transform: rotate(-45deg)
+}
+
+.spoon{
+  width: 20px;
+  height: 250px;
+  background: #C2DDE8;
+  position: absolute;
+  top: 140px;
+  left: 555px;
+  transform: rotate(25deg);
+  border-radius: 0 0 15px 15px;
+  -webkit-box-shadow: -5px 4px 20px -2px rgba(0,0,0,0.55);
+-moz-box-shadow: -5px 4px 20px -2px rgba(0,0,0,0.55);
+box-shadow: -5px 4px 20px -2px rgba(0,0,0,0.55);
+}
+
+.spoon:after{
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 90px;
+  background: #C2DDE8;
+  position:absolute;
+  left: -20px;
+  top: -10px;
+  border-radius: 50%;
+  -webkit-box-shadow: -21px 13px 35px -17px rgba(0,0,0,0.75);
+-moz-box-shadow: -21px 15px 35px -17px rgba(0,0,0,0.75);
+box-shadow: -21px 9px 30px -17px rgba(0,0,0,0.75);
+}
+
+.spoon:before{
+  content:"";
+  display: inline-block;
+  position: relative;
+  top: -9px;
+  left: -16px;
+  border-width: 3px;
+  border-color: rgba(250,250,250, 0.3) rgba(250,250,250, 0.6) transparent rgba(250,250,250, 0.3);
+  border-style: solid;
+  z-index: 1;
+  width: 45px;
+  height: 80px;
+   border-radius: 50%;
+/*   background: white; */
+}
+
+.spoon-shine{
+  width: 3px;
+  height: 185px;
+  background: rgba(250,250,250, 0.6);
+  position: relative;
+  left: 14px;
+  top: -34px;
+  border-radius: 0 0 15px 0;
+}

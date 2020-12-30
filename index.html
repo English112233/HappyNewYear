@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>新年快乐</title>
+<style>
+  html,body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
+.nextPage {
+  position: absolute;
+  bottom: 50px;
+  right: 300px;
+  font-size: 40px;
+  color: #f66;
+  cursor: pointer;
+}
+.prePage {
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
+  font-size: 40px;
+  color: #f66;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<iframe src=""></iframe>
+<!-- <div class="prePage" onclick="prePage">上一页</div>
+<div class="nextPage" onclick="nextPage">下一页</div> -->
+</body>
+</html>
+<script>
+  let loadArr = ["./last2020/index.html"]
+  window.onload = function () {
+    var keyCode;
+    document.onkeydown = function (e) {
+      if (!keyCode) {
+        if (window.event) {
+          keyCode = event.keyCode;
+        } else if (e.which) {
+          keyCode = e.which;
+        }
+        // 上：38
+        // 下：40
+        if (keyCode === 40) {
+          const iframeDom = document.querySelector('iframe');
+          iframeDom.src = loadArr[0]
+        }
+      }
+    };
+    document.onkeyup = function () {
+      if (keyCode) {
+          keyCode = undefined;
+      }
+    };
+  }
+</script>
